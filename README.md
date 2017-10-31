@@ -2,7 +2,7 @@
 
 Calculates and compares old and new (after Dec 6, 2017) Mobility pricing for any rides you take. 
 
-# Build
+# Build
 
 ## Build files (for deployment)
 

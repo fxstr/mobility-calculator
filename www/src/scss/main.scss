@@ -1,9 +1,11 @@
-@import '../../../node_modules/bulma/sass/utilities/_all.sass';
-@import '../../../node_modules/bulma/sass/base/_all.sass';
-@import '../../../node_modules/bulma/sass/elements/form.sass';
-@import '../../../node_modules/bulma/sass/elements/button.sass';
-@import '../../../node_modules/bulma/sass/elements/table.sass';
+.mc {
+	@import '../../../node_modules/bulma/sass/utilities/_all.sass';
+	@import '../../../node_modules/bulma/sass/base/_all.sass';
+	@import '../../../node_modules/bulma/sass/elements/form.sass';
+	@import '../../../node_modules/bulma/sass/elements/button.sass';
+	@import '../../../node_modules/bulma/sass/elements/table.sass';
 
-input.input {
-	max-width: 80px
+	input.input {
+		max-width: 80px
+	}
 }

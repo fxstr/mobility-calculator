@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 
 
@@ -73,9 +74,14 @@ module.exports = function(env) {
 		, resolve: {
 			extensions: ['.js', '.jsx']
 		}
-		, plugins: [new ExtractTextPlugin({
-			filename: '/css/main.min.css'
-		})]
+		, plugins: [
+			new ExtractTextPlugin({
+				filename: '/css/main.min.css'
+			})
+			, new UglifyJSPlugin({
+				sourceMap: true
+			})
+		]
 	};
 
 };
